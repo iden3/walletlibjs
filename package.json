@@ -1,0 +1,23 @@
+{
+  "name": "walletlib",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "rm -rf tmp && mocha --require babel-core/register --require mock-local-storage --recursive 'src/*.test.js' --timeout 100000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pbkdf2-sha256": "^1.1.1",
+    "tweetnacl": "^1.0.1",
+    "tweetnacl-util": "^0.15.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "babel-cli": "^6.26.0",
+    "@babel/preset-env": "^7.4.5",
+    "chai": "^4.1.2",
+    "mock-local-storage": "^1.1.8"
+  }
+}
